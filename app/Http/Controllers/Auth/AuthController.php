@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -130,7 +131,25 @@ class AuthController extends Controller
     {
         $user = Socialite::driver('facebook')->user();
         
-
+        
+        if($the_user = User::select()->where('email','=',$user->email()->first())){
+            Auth::login($the_user);
+        } else {
+            $new_user = new User;
+            $new_user->name = $user->user['name'];
+            $new_user->lastname = $user->user['lastname'];
+            $new_user->email = $user->email;
+            $new_user->rol = 'user';
+            $new_user->social = 1;
+            $new_user->gender = $user->user['gender'];
+            $new_user->save();
+            Auth::login($new_user);
+   
+        }
+        
+        
+        
+        return redirect($this->redirectPath());
 
         // $user->token;
     }

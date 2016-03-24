@@ -16,11 +16,12 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('lastname');
+            $table->boolean('social')->default(false);
             $table->date('birthdate')->nullable();
             $table->enum('role',['user','editor','admin']);
             $table->enum('gender',['female','male']);
             $table->string('email')->unique();
-            $table->string('password', 60);
+            $table->string('password', 60)->nullable();
             
             $table->integer('pais_id')->unsigned()->nullable();
            // $table->foreign('pais_id')->references('id')->on('countries');
