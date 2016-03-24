@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password', 60)->nullable();
             
+            
             $table->integer('pais_id')->unsigned()->nullable();
            // $table->foreign('pais_id')->references('id')->on('countries');
             
