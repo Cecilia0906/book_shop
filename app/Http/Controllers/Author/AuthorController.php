@@ -84,9 +84,9 @@ class AuthorController extends Controller
     public function store(CreateAuthorRequest $request)
     {
           $author = new Author($request->all());
-
-           $author->save();
-           return \Redirect::route('author.list');
+          $author->fullname = $author->name.' '.$author->lastname;
+          $author->save();
+          return \Redirect::route('author.list');
     }
 
     /**

@@ -62,7 +62,7 @@ class Book extends Entity
 
     public  function filterAndPaginate($title,$category_id,$editorial_id){
 
-        return  Book::title($title)->category_id($category_id)->editorial_id($editorial_id)->orderBy('id','ASC')->paginate(6);
+        return  Book::title($title)->category_id($category_id)->editorial_id($editorial_id)->orderBy('id','ASC')->paginate(3);
        
         
     }

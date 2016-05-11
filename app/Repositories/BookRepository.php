@@ -30,7 +30,7 @@ class BookRepository extends BaseRepository {
     {
         return $this->selectBooksList()
             ->orderBy('id', 'ASC')
-            ->paginate(6);
+            ->paginate(3);
     }
     
 
@@ -94,7 +94,7 @@ class BookRepository extends BaseRepository {
     {
         return $this->selectBooksListFull($title ,$category_id ,$editorial_id )  
             ->orderBy('created_at', 'DESC')
-            ->paginate(6);
+            ->paginate(3);
         
         
         //return $this->getModel()->filterAndPaginate($title,$category_id,$editorial_id);

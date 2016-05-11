@@ -7,7 +7,7 @@
                         <div class="media-left">
              
                           <a href="{{ route('book/details',$book) }}">
-                            <img class="media-object" src="{{ asset('/storage/'.$book-> photo) }}" class="img-rounded" alt="clic para mas información">
+                            <img class="media-object img-rounded" src="{{ asset('/storage/'.$book-> photo) }}"  alt="clic para mas información">
                           </a>
                         </div>
                         <div class="media-body">

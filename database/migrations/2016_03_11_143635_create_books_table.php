@@ -20,6 +20,7 @@ class CreateBooksTable extends Migration
             $table->string('title');
             $table->string('photo')->nullable();
             $table->mediumText('description')->nullable();
+            $table->float('price')->default(0);
             $table->integer('editorial_id')->unsigned()->nullable();
             $table->foreign('editorial_id')->references('id')->on('editorials');
             $table->integer('category_id')->unsigned()->nullable();

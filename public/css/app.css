@@ -1,10 +1,25 @@
 
 body{
     
-    background-color: #843534;
+    /*background-color: #843534;*/
+    background-color: #600DF1;
+    
     
     
 }
+
+
+input{
+    background-color: #600DF1;
+}
+
+/*input[type="email"], [type="password"] {
+
+  background-color : #ccc; 
+  background: url(/../img/Carro1.jpg);
+
+}*/
+
 
 
 fieldset.scheduler-border {

@@ -28,6 +28,11 @@ class Author extends Entity
     {
         return $this->belongsToMany(Books::getClass(), 'book_authors')->withTimestamps();
     }
+    
+     public function scopeFullName()
+    {
+           return $this->name .''.$this->lastname;  
+    }
      
      
 }

@@ -14,7 +14,7 @@
 
 
       <hr>
-      <div class='container'>
+     
             
        
            
@@ -38,10 +38,11 @@
                       {!!Form::close()!!}
                    
               
-          <hr>
+                <hr>
+                 
                 <div class='panel-body'>     
                    
-                    Hay {{ $books->total()}} libros.
+                    <h4>Hay {{ $books->total()}} libros.</h4>
                  @include('frontend.partials.table')
 
                     {!! $books->appends(Request::only(['title','editorial_id','category_id']))->render()!!}
@@ -50,17 +51,7 @@
             </div>
        
     </div> 
-</div> 
-      
-
-
-
-
-      <footer>
-        <p>&copy; 2016 Company, BooksShop.</p>
-      </footer>
-      </div>
-      
+   
 @endsection
 
 @section('script')

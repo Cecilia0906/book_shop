@@ -57,6 +57,7 @@ $factory->define(App\Models\Book::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->title,
         'description'   => $faker->paragraph(),
+        'price' =>$faker->randomFloat( 2,  50, 350),
         'editorial_id' => rand(1,10),
         'category_id' => rand(1,10)
 

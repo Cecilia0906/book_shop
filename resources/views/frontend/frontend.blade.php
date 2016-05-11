@@ -13,14 +13,7 @@
  
 
       <hr>
-      
 
-
-
-
-      <footer>
-        <p>&copy; 2016 Company, BooksShop.</p>
-      </footer>
       </div>
       
 @endsection

@@ -13,13 +13,20 @@ use App\Http\routes\books;
 |
 */
 
-Route::get('/', 
-  [
-    'uses' => 'HomeController@index',
-    'as' => 'home'
-    
-    
-]);
+//Route::get('/', 
+//  [
+//    'uses' => 'HomeController@index',
+//    'as' => 'home'
+//    
+//    
+//]);
+
+Route::get('/',
+        
+        ['uses'=>'FrontEnd\FrontendController@index',
+          'as'=>'home'
+            
+        ]);
 
 
 
@@ -244,3 +251,10 @@ Route::get('site',
          //SOCIAL MEDIA:          
           Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
           Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
+          
+          
+          //SHOPPING CART:
+          
+          Route::get('/addProduct/{productId}', 'Shop\CartController@addItem');
+          Route::get('/removeItem/{productId}', 'Shop\CartController@removeItem');
+          Route::get('/cart', 'Shop\CartController@showCart');

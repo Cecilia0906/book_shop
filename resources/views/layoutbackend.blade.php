@@ -10,12 +10,13 @@
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<link href="{{ asset('/css/backend.css') }}" rel="stylesheet">
+	
         <link href="{{ asset('/css/pickmeup.min.css') }}" rel="stylesheet">
         <link rel="shortcut icon" href="{{ asset('/img/favicon.ico') }}">
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ asset('css/mainbackend.css') }}">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +40,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('site') }}">Volver al Portal</a></li>
+					<li><a href="{{ url('/') }}">Volver al Portal</a></li>
                                         <li><a href="{{ route('user.list') }}">Usuarios</a></li>
                                         <li><a href="{{ route('book.list') }}">Libros</a></li>
                                         <li><a href="{{ route('author.list') }}">Autores</a></li>
@@ -71,7 +72,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 
-
+        @include('backend.partials.footer')
         @yield('script')
 </body>
 </html>

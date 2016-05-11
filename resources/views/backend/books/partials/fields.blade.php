@@ -21,7 +21,7 @@
                     <div class="form-group">
                          {!! Form::label('Autor', '',array('class' => 'col-md-4 control-label')) !!}	
                          <div class="col-md-6">
-                           {!! Form::select('authors[]', App\Models\Author::lists('name','id')->toArray(), $bookselect, ['multiple','placeholder' => 'Seleccione un autor','class' => 'form-control']) !!}	
+                           {!! Form::select('authors[]', App\Models\Author::lists('fullname','id')->toArray(), $bookselect, ['multiple','placeholder' => 'Seleccione un autor','class' => 'form-control']) !!}	
                          </div> 
                      </div>
                     <div class="form-group">

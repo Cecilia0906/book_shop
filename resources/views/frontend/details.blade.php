@@ -20,6 +20,7 @@
                 @if(Session::has('message'))
                 <p class='alert alert-success'>{{Session::get('message')}}</p>
                 @endif
+                <div class="col-md-8">
                <div class="media">
                         <div class="media-left">
                           <a href="#">
@@ -48,19 +49,28 @@
                              @include('frontend.partials.comment')
                         </div>
                 </div>
+             </div>
+                <div class="col-md-4">
+                   
+                    <div class="sidebar-module sidebar-module-inset">
+                    <h4>Precio</h4>
+                    <p>{{$book->price}}.</p>
+                    @if(isset($solicitado))
+                        @if(!$solicitado)
+                        <p><a class="btn btn-primary" href="{{url('addProduct/'.$book->id) }}" role="button">Agregar a la órden</a></p>
+                        @else
+                         <p><a class="btn btn-primary" href="" role="button">Libro ya agregado</a></p>
+
+                        @endif
+                    @endif
+                  </div>
+                </div>
         </div>
        
     </div> 
 </div> 
-      
 
-
-
-
-      <footer>
-        <p>&copy; 2016 Company, BooksShop.</p>
-      </footer>
-      </div>
+</div>
       
 @endsection
 
