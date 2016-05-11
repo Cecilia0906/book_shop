@@ -15,8 +15,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'>
         
 
-	<link href="{{ asset('/css/frontend.css') }}" rel="stylesheet">
-        <link href="{{ asset('/css/pickmeup.min.css') }}" rel="stylesheet">
+	<!--<link href="{{ asset('/css/frontend.css') }}" rel="stylesheet">-->
+        <!--<link href="{{ asset('/css/pickmeup.min.css') }}" rel="stylesheet">-->
         <link rel="shortcut icon" href="{{ asset('/img/favicon.ico') }}">
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
