@@ -131,7 +131,7 @@ class AuthController extends Controller
     {
         $user = Socialite::driver('facebook')->user();
         
-        
+        dd($user);
         if($the_user = User::select()->where('email','=',$user->email()->first())){
             Auth::login($the_user);
         } else {
