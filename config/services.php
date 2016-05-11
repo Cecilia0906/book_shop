@@ -39,7 +39,7 @@ return [
     'facebook' => [
         'client_id' => '1562765810700514',
         'client_secret' => 'db43fb14de167e0e861f8b8fa35a0b93',
-        'redirect' => 'http://books_shop.app/auth/facebook/callback',
+        'redirect' => 'http://books15shop.com/auth/facebook/callback',
     ],
 
 ];
