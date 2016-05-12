@@ -93,7 +93,7 @@ class BookRepository extends BaseRepository {
      public function paginateLatest($title = "",$category_id = "0",$editorial_id = "0")
     {
         return $this->selectBooksListFull($title ,$category_id ,$editorial_id )  
-            ->orderBy('created_at', 'DESC')
+            ->orderBy('title', 'ASC')
             ->paginate(3);
         
         
