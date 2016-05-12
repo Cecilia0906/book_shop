@@ -159,11 +159,11 @@ transition: all 0.3s ease-in-out;
      width:91%;
 }
 
-/* img {
+ img {
      width:100%;
-     height:auto;
+     /*height:auto;*/
 
- }*/
+ }
     
     
 @media screen and (max-width:800px){
@@ -177,6 +177,7 @@ transition: all 0.3s ease-in-out;
        float: left;
        width:100%; 
        clear: both;
+       margin-bottom: 10px;
      }
      
      .search{

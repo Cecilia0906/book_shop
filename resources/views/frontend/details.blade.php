@@ -55,7 +55,7 @@
                    
                     <div class="sidebar-module sidebar-module-inset">
                     <h4>Precio</h4>
-                    <p>{{$book->price}}.</p>
+                    <p>${{$book->price}}.</p>
                     @if(isset($solicitado))
                         @if(!$solicitado)
                         <p><a class="btn btn-primary" href="{{url('addProduct/'.$book->id) }}" role="button">Agregar a la órden</a></p>
