@@ -33,6 +33,8 @@ footer
         /*color: #817E7E;*/
          color: #5F5C5C;
          width:100%;
+         margin-bottom: 0;
+         padding-bottom: 0;
         
        
 }
@@ -256,6 +258,15 @@ hr{
  }
     
   
+}
+
+
+@media screen and (min-width:1200px){
+  
+    .contenedor{
+        min-height: 465px;
+    }
+   
 }
 
 /*pruebas*/

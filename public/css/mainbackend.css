@@ -63,11 +63,29 @@ transition: all 0.3s ease-in-out;
 }
 
 
-.container
+.container .container-footer
 {
     padding-top: 20px;
     padding-bottom: 10px;
+    
 
+}
+
+.container-footer{
+    margin-left:200px;
+}
+
+.pad {
+    padding-bottom: 20px;
+}
+
+
+@media screen and (min-width:1200px){
+  
+    .container{
+        min-height: 497px;
+    }
+   
 }
 
 
