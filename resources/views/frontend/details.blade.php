@@ -42,10 +42,11 @@
                             @endif
                             @endforeach
                             </p>
+                            <div class="text">
                             @if(isset($book->description))
                              <p>Descripción:{{$book->description}}</p>
                             @endif
-                            
+                             </div>
                              @include('frontend.partials.comment')
                         </div>
                 </div>

@@ -22,7 +22,7 @@
                 @if(Session::has('message'))
                 <p class='alert alert-success'>{{Session::get('message')}}</p>
                 @endif
-               
+               <div class='search'>  
                        {!!Form::model(Request::all(),['route'=>'book/lista','method'=>'GET','class'=>'navbar-form navbar-left pull-right','role'=>'search'])!!}
                       
                         <div class="form-group">
@@ -36,7 +36,7 @@
                         </div>
                         <button type="submit" class="btn btn-default">Buscar</button>
                       {!!Form::close()!!}
-                   
+                </div>
               
                 <hr>
                  
