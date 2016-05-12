@@ -5,7 +5,10 @@ body
 	/*font-family: 'Poiret One', cursive;*/
         font-family: 'Normal 400', cursive;
         
+        /*color:#000;*/
         
+        
+      
 
 }
 
@@ -76,7 +79,25 @@ height: auto;
     width:181px;
     height:278px;
     
+    /*border:solid 5px #222;*/
+    box-shadow: 0px 3px 5px #000;
+    -moz-box-shadow: 0px 3px 5px #000;
+    -webkit-box-shadow: 0px 3px 5px #000;
+    margin-right: 5px;
+    
 }
+
+.img-border{
+ 
+    /*border:solid 2px #222;*/
+    border-radius: 6px;
+    
+    box-shadow: 0px 3px 5px #000;
+    -moz-box-shadow: 0px 3px 5px #000;
+    -webkit-box-shadow: 0px 3px 5px #000;
+    margin-right: 20px;
+}
+
 .white-panel {
 position: absolute;
 background: white;
@@ -109,10 +130,26 @@ transition: all 0.3s ease-in-out;
 /* Slider ----------*/
 .navbar
 {
-        background: #F2EEFA;
+        /*background: #F2EEFA;*/
 	margin-bottom: 0;
         width:100%;
         
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6440e7+0,ffffff+100 */
+background: rgb(100,64,231); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(100,64,231,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(100,64,231,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(100,64,231,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6440e7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow: 0px 3px 5px #000;
+-moz-box-shadow: 0px 3px 5px #000;
+-webkit-box-shadow: 0px 3px 5px #000;
+        
+}
+
+hr{
+   box-shadow: 0px 3px 1px #000; 
+   -moz-box-shadow: 0px 3px 1px #000; 
+   -webkit-box-shadow: 0px 3px 1px #000; 
 }
 
 /* Carrito -----------*/
@@ -220,5 +257,30 @@ transition: all 0.3s ease-in-out;
     
   
 }
+
+/*pruebas*/
+
+.form-control {
+
+   background: aaa;
+   border: 1px solid #393939;
+   border-radius: 3px 3px 3px 3px;
+   color: #393939;
+   font-size: 12px;
+   padding: 5px;
+}
+
+ .btn-primary{
+    
+     
+    
+    box-shadow: 0px 3px 2px #000;
+    -moz-box-shadow: 0px 3px 2px #000;
+    -webkit-box-shadow: 0px 3px 2px #000;
+     margin-left: 10px;
+    
+}
+
+
 
 
