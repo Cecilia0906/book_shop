@@ -2,13 +2,11 @@ body
 {
 	/*background: #EFC7F8;*/
         background: #FFF;
+        min-height: 100vh;
+        display:flex;
+        flex-direction:column;
 	/*font-family: 'Poiret One', cursive;*/
         font-family: 'Normal 400', cursive;
-        
-        /*color:#000;*/
-        
-        
-      
 
 }
 
@@ -188,6 +186,7 @@ hr{
 
 .contenedor{
     width:100%;
+    flex:1;
     max-width:10000px;
     margin:0 auto;
     overflow: hidden;
@@ -196,6 +195,14 @@ hr{
 
 .container{
      width:91%;
+     
+    
+}
+
+.container-left{
+     width:70%;
+     /*border-style: solid;*/
+     float:left;
 }
 
  img {
@@ -292,6 +299,17 @@ hr{
     
 }
 
+
+#sidebar{
+    padding-top: 50px;
+    width:21%;
+    /*border-style: solid;*/
+    float:left;
+}
+
+aside{
+    padding:10px;
+}
 
 
 

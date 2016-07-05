@@ -1,6 +1,9 @@
 body
 {
  background-color: #FFF;
+ min-height: 100vh;
+ display:flex;
+ flex-direction:column;
     
 }
 
@@ -21,7 +24,7 @@ footer
         padding-top:50px;
         padding-bottom: 30px;
         margin-bottom: 0px;
-        
+      
        
 }
 
@@ -62,6 +65,9 @@ transition: all 0.3s ease-in-out;
         
 }
 
+.container {
+    flex:1;
+}
 
 .container .container-footer
 {
